@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: sans-serif;
+}
+#header{
+    display: flex;
+    color: blueviolet;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: black;
+    border-radius: 20px;
+}
