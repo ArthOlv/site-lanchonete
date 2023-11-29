@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Cardápio</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="slick-1.8.1/slick/slick-theme.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Noto+Sans&family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+    <script src="js/funcoes.js"></script>
+
+</head>
+<body>
+
+    <script>
+        var lista_produtos = [
+            {'nome': 'Suco', 'descricao': 'Suco de cevada', 'preco': 1},
+            {'nome': 'Cerveja', 'descricao': 'Água divina', 'preco': 5}
+        ];
+
+        console.log(lista_produtos[0]['nome']);
+        
+        for (i in lista_produtos) {
+            console.log(lista_produtos[i]);
+            var x = lista_produtos[i];
+            produto(x.nome, x.descricao, x.preco);
+        }
+    </script>
+    
+</body>
+</html>
