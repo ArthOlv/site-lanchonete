@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 0;
     color: #242424;
+    background-color: black;
     font-family: sans-serif;
     /* os 2 adiciona o quebramento de linha nos textos caso seja redimencionado o site */
     word-wrap: break-word;
@@ -30,6 +31,7 @@ button{
     margin: 0;
     width: 30vw;
     height: 95vh;
+    font-family: 'MedievalSharp', cursive;
 }
 section.module h1{
     font-family: 'MedievalSharp', cursive;
@@ -93,4 +95,32 @@ section.module.parallax h1{
     display: flex; /* Necessário para o margin funcionar */
     margin-left: auto;
     margin-right: auto;
+}
+.botao1{
+    border: 30px;
+    border-radius: 20px;
+    font-size: 400%;
+    background-color: black;
+    color: white;
+    background-image: url(imagens/burguer1.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+    font-family: 'MedievalSharp', cursive;
+}
+.botao1:hover{
+    size: 0.1;
+    opacity: 0.5;
+}
+.botao2{
+    border: black 5px;
+    background-color: #7849A5;
+    color: white;
+}
+.botao3{
+    border: black 5px;
+    background-color: #494DE6;
+    background: aqua;
+    color: white;
 }
