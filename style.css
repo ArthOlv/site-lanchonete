@@ -97,6 +97,7 @@ section.module.parallax h1{
     margin-right: auto;
 }
 .botao1{
+    cursor: pointer;
     font-size: 30px;
     border: 30px;
     border-radius: 20px;
@@ -115,6 +116,7 @@ section.module.parallax h1{
     color: #7849A5;
 }
 .botao2{
+    cursor: pointer;
     font-size: 30px;
     border: 30px;
     border-radius: 20px;
@@ -133,6 +135,7 @@ section.module.parallax h1{
     color: #7849A5;
 }
 .botao3{
+    cursor: pointer;
     font-size: 30px;
     border: 30px;
     border-radius: 20px;
@@ -149,24 +152,4 @@ section.module.parallax h1{
     transition: all 0.3s ease;
     font-size: 45px;
     color: #7849A5;
-}
-/* Fim do css da main page */
-/* Inicio do css do cardápio */
-#cardapio{
-    background-color: #7849A5; 
-    display: block;
-    width: 70%;
-    margin: auto;
-    border-radius: 15px;
-    border: solid 10px #9749A6;
-}
-#cabeca{
-    text-align: center;
-    background-color: #5B49A6;
-    padding: 20px;
-    font-family: 'MedievalSharp', cursive;
-    font-size: 45px;
-    color: white;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
 }

@@ -1,0 +1,81 @@
+body{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+#cardapio{
+    background-color: #371559; 
+    display: block;
+    width: 60%;
+    margin: auto;
+    padding: 0;
+    border-radius: 15px;
+    border: solid 2px #291240;
+    border-bottom: solid 10px #291240;
+}
+#cabeca{
+    display: flex;
+    background-color: #371559;
+    padding: 20px;
+    font-family: 'MedievalSharp', cursive;
+    color: white;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom: solid 10px #291240;
+    margin-top: 0;
+}
+#titulo{
+    font-size: 45px;
+    text-align: center;
+    margin: auto;
+    padding: auto;
+}
+input{
+    color: white;
+    background-color: #7E5E8C;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    font-size: 30px;
+}
+#fundo{
+    background-image: url(imagens/taverna.svg);
+}
+
+/* css que tava no js */
+.linha{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-top: 5px;
+    /* border: solid 2px #7E5E8C;   
+    border-radius: 5px; */ 
+    /* borda para teste */
+    border-bottom: solid 3px #7E5E8C;
+    display: flex;
+    justify-content: center;
+    }
+.coluna-1{
+    height: auto;
+    width: auto;
+    padding: 0;
+    margin: auto;
+}
+.coluna-2{
+    width: 40%
+}
+.coluna-3{
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    display: block;
+    color: white;
+    font-size: 15px;
+}
+#descricao{
+    color: burlywood;
+}
+.texto-produtos{
+    color: #FFF;
+}
