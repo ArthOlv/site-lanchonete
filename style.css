@@ -97,9 +97,9 @@ section.module.parallax h1{
     margin-right: auto;
 }
 .botao1{
+    font-size: 30px;
     border: 30px;
     border-radius: 20px;
-    font-size: 400%;
     background-color: black;
     color: white;
     background-image: url(imagens/burguer1.jpg);
@@ -110,17 +110,63 @@ section.module.parallax h1{
     font-family: 'MedievalSharp', cursive;
 }
 .botao1:hover{
-    size: 0.1;
-    opacity: 0.5;
+    transition: all 0.3s ease;
+    font-size: 45px;
+    color: #7849A5;
 }
 .botao2{
-    border: black 5px;
-    background-color: #7849A5;
+    font-size: 30px;
+    border: 30px;
+    border-radius: 20px;
+    background-color: black;
     color: white;
+    background-image: url(imagens/combo2.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+    font-family: 'MedievalSharp', cursive;
+}
+.botao2:hover{
+    transition: all 0.3s ease;
+    font-size: 45px;
+    color: #7849A5;
 }
 .botao3{
-    border: black 5px;
-    background-color: #494DE6;
-    background: aqua;
+    font-size: 30px;
+    border: 30px;
+    border-radius: 20px;
+    background-color: black;
     color: white;
+    background-image: url(imagens/bebida2.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+    font-family: 'MedievalSharp', cursive;
+}
+.botao3:hover{
+    transition: all 0.3s ease;
+    font-size: 45px;
+    color: #7849A5;
+}
+/* Fim do css da main page */
+/* Inicio do css do cardápio */
+#cardapio{
+    background-color: #7849A5; 
+    display: block;
+    width: 70%;
+    margin: auto;
+    border-radius: 15px;
+    border: solid 10px #9749A6;
+}
+#cabeca{
+    text-align: center;
+    background-color: #5B49A6;
+    padding: 20px;
+    font-family: 'MedievalSharp', cursive;
+    font-size: 45px;
+    color: white;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }

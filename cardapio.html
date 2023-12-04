@@ -12,22 +12,25 @@
 
 </head>
 <body>
+    <header id="cabeca">Cardápio</header>
+    <div id="cardapio">
+        <script>
+            sessionStorage.setItem("carrinho", "0");
 
-    <script>
-        sessionStorage.setItem("carrinho", "0");
+            var lista_produtos = [
+                {'nome': 'Suco', 'descricao': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quam, iste sunt veniam ipsa deserunt enim officiis porro sequi sit nobis, exercitationem, reprehenderit adipisci. Cumque unde quo suscipit eaque saepe.', 'preco': 1, 'imagem': "imagens/burguer.png"},
+                {'nome': 'Cerveja', 'descricao': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quam, iste sunt veniam ipsa deserunt enim officiis porro sequi sit nobis, exercitationem, reprehenderit adipisci. Cumque unde quo suscipit eaque saepe.', 'preco': 5, 'imagem': "imagens/canecasembg.png"},
+                {'nome': 'Cerveja', 'descricao': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quam, iste sunt veniam ipsa deserunt enim officiis porro sequi sit nobis, exercitationem, reprehenderit adipisci. Cumque unde quo suscipit eaque saepe.', 'preco': 5, 'imagem': "imagens/canecasembg.png"},
+            ];
 
-        var lista_produtos = [
-            {'nome': 'Suco', 'descricao': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quam, iste sunt veniam ipsa deserunt enim officiis porro sequi sit nobis, exercitationem, reprehenderit adipisci. Cumque unde quo suscipit eaque saepe.', 'preco': 1, 'imagem': "imagens/burguer.png"},
-            {'nome': 'Cerveja', 'descricao': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quam, iste sunt veniam ipsa deserunt enim officiis porro sequi sit nobis, exercitationem, reprehenderit adipisci. Cumque unde quo suscipit eaque saepe.', 'preco': 5, 'imagem': "imagens/canecasembg.png"}
-        ];
-
-        console.log(lista_produtos[0]['imagem']);
+            console.log(lista_produtos[0]['imagem']);
         
-        for (i in lista_produtos) {
-            var x = lista_produtos[i];
-            produto(x.nome, x.descricao, x.preco, x.imagem);
-        }
-    </script>
-    
+            for (i in lista_produtos) {
+                var x = lista_produtos[i];
+                produto(x.nome, x.descricao, x.preco, x.imagem);
+            }
+        </script>
+    </div>
+
 </body>
 </html>

@@ -4,9 +4,12 @@ function produto(nome, descricao, preco, imagem) {
         .linha{
             display: flex;
             flex-flow: row wrap;
+            justify-content: center;
             }
         .coluna-1{
             width: 15%;
+            margin-top: auto;
+            margin-bottom: auto;
         }
         .coluna-2{
             width: 40%
@@ -15,7 +18,7 @@ function produto(nome, descricao, preco, imagem) {
             width: 20%
         }
         #descricao{
-            color: grey;
+            color: burlywood;
         }
         .texto-produtos{
             color: #FFF;
