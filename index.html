@@ -12,6 +12,23 @@
     <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Noto+Sans&family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
 <body>
+    <script>
+        var lista_produtos = [
+            {"nome": "Suco", "descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quam, iste sunt veniam ipsa deserunt enim officiis porro sequi sit nobis, exercitationem, reprehenderit adipisci. Cumque unde quo suscipit eaque saepe.", "preco": 1, "imagem": "imagens/burguer.png"},
+            {"nome": "Cerveja", "descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quam, iste sunt veniam ipsa deserunt enim officiis porro sequi sit nobis, exercitationem, reprehenderit adipisci. Cumque unde quo suscipit eaque saepe.", "preco": 5, "imagem": "imagens/canecasembg.png"},
+            {"nome": "Cerveja", "descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quam, iste sunt veniam ipsa deserunt enim officiis porro sequi sit nobis, exercitationem, reprehenderit adipisci. Cumque unde quo suscipit eaque saepe.", "preco": 5, "imagem": "imagens/canecasembg.png"},
+            {"nome": "Suco", "descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quam, iste sunt veniam ipsa deserunt enim officiis porro sequi sit nobis, exercitationem, reprehenderit adipisci. Cumque unde quo suscipit eaque saepe.", "preco": 1, "imagem": "imagens/burguer.png"},
+            {"nome": "Cerveja", "descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quam, iste sunt veniam ipsa deserunt enim officiis porro sequi sit nobis, exercitationem, reprehenderit adipisci. Cumque unde quo suscipit eaque saepe.", "preco": 5, "imagem": "imagens/canecasembg.png"},
+            {"nome": "Cerveja", "descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quam, iste sunt veniam ipsa deserunt enim officiis porro sequi sit nobis, exercitationem, reprehenderit adipisci. Cumque unde quo suscipit eaque saepe.", "preco": 5, "imagem": "imagens/canecasembg.png"},
+        ];
+        
+        sessionStorage.setItem("lista_produtos", JSON.stringify(lista_produtos));
+
+        var lista = sessionStorage.getItem("lista_produtos");
+        lista = JSON.parse(lista);
+        console.log(lista[0])
+
+    </script>
 
     <div class="wrapper">
         <main>

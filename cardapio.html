@@ -23,18 +23,11 @@
         </header>
         <div id="cardapio">
             <script>
-                sessionStorage.setItem("carrinho", "0");
+
+                var lista_produtos = sessionStorage.getItem("lista_produtos")
+                lista_produtos = JSON.parse(lista_produtos);
                 
-                var lista_produtos = [
-                    {'nome': 'Suco', 'descricao': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quam, iste sunt veniam ipsa deserunt enim officiis porro sequi sit nobis, exercitationem, reprehenderit adipisci. Cumque unde quo suscipit eaque saepe.', 'preco': 1, 'imagem': "imagens/burguer.png"},
-                    {'nome': 'Cerveja', 'descricao': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quam, iste sunt veniam ipsa deserunt enim officiis porro sequi sit nobis, exercitationem, reprehenderit adipisci. Cumque unde quo suscipit eaque saepe.', 'preco': 5, 'imagem': "imagens/canecasembg.png"},
-                    {'nome': 'Cerveja', 'descricao': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quam, iste sunt veniam ipsa deserunt enim officiis porro sequi sit nobis, exercitationem, reprehenderit adipisci. Cumque unde quo suscipit eaque saepe.', 'preco': 5, 'imagem': "imagens/canecasembg.png"},
-                    {'nome': 'Suco', 'descricao': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quam, iste sunt veniam ipsa deserunt enim officiis porro sequi sit nobis, exercitationem, reprehenderit adipisci. Cumque unde quo suscipit eaque saepe.', 'preco': 1, 'imagem': "imagens/burguer.png"},
-                    {'nome': 'Cerveja', 'descricao': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quam, iste sunt veniam ipsa deserunt enim officiis porro sequi sit nobis, exercitationem, reprehenderit adipisci. Cumque unde quo suscipit eaque saepe.', 'preco': 5, 'imagem': "imagens/canecasembg.png"},
-                    {'nome': 'Cerveja', 'descricao': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quam, iste sunt veniam ipsa deserunt enim officiis porro sequi sit nobis, exercitationem, reprehenderit adipisci. Cumque unde quo suscipit eaque saepe.', 'preco': 5, 'imagem': "imagens/canecasembg.png"},
-                ];
-                
-                console.log(lista_produtos[0]['imagem']);
+                console.log(lista_produtos[0]);
                 
                 for (i in lista_produtos) {
                     var x = lista_produtos[i];
@@ -42,7 +35,7 @@
                 }
 
             </script>
-            <br>
+            <br><br>
             <div>
                 <button type="button" onclick="add_carrinho()">Adicionar ao carrinho</button>
             </div>
