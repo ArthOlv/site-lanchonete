@@ -1,3 +1,4 @@
+
 function produto(nome, descricao, preco, imagem) {
     document.write(`
     <div class="linha">
@@ -15,6 +16,8 @@ function produto(nome, descricao, preco, imagem) {
         </div>
     </div>
         `);
-    
-    document.write("<br>")
+}
+
+function add_carrinho() {
+    alert("ADicionado ao carrinho")
 }

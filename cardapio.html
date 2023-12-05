@@ -14,7 +14,9 @@
 <body>
     <section id="fundo">
         <header id="cabeca">
-            <img src="imagens/casa.svg" alt="homepage" id="homepage">
+            <a href="index.html">
+                <img src="imagens/casa.svg" alt="homepage" id="homepage">
+            </a>
             <h1 id="titulo">Cardápio</h1>
             <img src="imagens/user.svg" alt="login" id="login">
             
@@ -38,7 +40,12 @@
                     var x = lista_produtos[i];
                     produto(x.nome, x.descricao, x.preco, x.imagem);
                 }
-                </script>
+
+            </script>
+            <br>
+            <div>
+                <button type="button" onclick="add_carrinho()">Adicionar ao carrinho</button>
+            </div>
         </div>
         
     </section>
