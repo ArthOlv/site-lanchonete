@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     background-color: black;
     margin: 0;
@@ -40,6 +44,8 @@ input{
 }
 #fundo{
     background-image: url(imagens/taverna.svg);
+    margin: 0;
+    padding: 0;
 }
 
 /* css que tava no js */
@@ -78,4 +84,20 @@ input{
 }
 .texto-produtos{
     color: #FFF;
+}
+#carrinho{
+    position: fixed;
+    bottom: 20px;
+    left: 47vw;
+    width: 90px;
+    height: 90px;
+    border: 3px solid #56405f;
+    border-radius: 50%;
+    background-color: #7E5E8C;
+}
+#imgCarrinho{
+    padding: 0;
+    margin: 3px 0 0 5px;
+    width: 65px;
+    height: 65px;
 }
