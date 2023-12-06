@@ -59,7 +59,7 @@ input::placeholder{
 .linha{
     height: 100%;
     width: 100%;
-    margin: 0;
+    margin: 20px 0 20px 0;
     padding: 0;
     margin-top: 5px;
     /* border: solid 2px #7E5E8C;   
@@ -194,4 +194,15 @@ input::placeholder{
     justify-content: center;
     margin-top: 10px;
     color: white;
+}
+/* botao atualizar do admin */
+#atualizar{
+    position: fixed;
+    left: 45.5%;
+    bottom: 30px;
+    color: white;
+    background-color: #7E5E8C;
+    padding: 20px;
+    border: 2px;
+    border-radius: 20px;
 }
