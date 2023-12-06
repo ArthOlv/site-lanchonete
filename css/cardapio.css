@@ -72,7 +72,7 @@ input::placeholder{
 .coluna-1{
     height: auto;
     width: auto;
-    padding: 0;
+    padding: auto;
     margin: auto;
     border: solid 3px #291240;
     border-radius: 20px;
