@@ -136,6 +136,34 @@ input::placeholder{
     background-color: wheat;
     margin: auto;
     padding: 0;
+    justify-content: center;
     align-items: center;
-    top: -2em;
+    top: -3em;
+}
+#botoes{
+    display: flex;
+    justify-content: center;
+}
+#X{
+    position: relative;
+    background-color: red;
+    color: white;
+}
+#pix{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+#cartao{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+#dinheiro{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
 }
