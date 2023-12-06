@@ -11,13 +11,23 @@ function produto(nome, descricao, preco, imagem) {
             <p class="texto-produtos">R$ ${preco}</p>
         </div>
         <div class="coluna-3">
-            <input type="number" id="${nome}" min="0" step="0">
+            <input type="number" id="${nome}" max="9" min="0" placeholder="0">
             <p id='unidade'>unidade(s)</p>
         </div>
     </div>
         `);
 }
 
-function add_carrinho() {
-    alert("ADicionado ao carrinho")
+function add_carrinho(lista_produtos) {
+    for (i in lista_produtos) {
+        let produto = lista_produtos[i];
+
+        try {
+            let x = document.getElementById(produto["nome"]);
+            console.log(`${x.value} ${produto["nome"]}`);
+        } catch {
+            console.log("Erro");
+        }
+    }
+    alert(`Adicionado ao carrinho`);
 }

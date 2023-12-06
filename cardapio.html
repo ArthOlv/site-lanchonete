@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <title>Cardápio</title>
-    <link rel="stylesheet" href="cardapio.css">
+    <link rel="stylesheet" href="css/cardapio.css">
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Noto+Sans&family=Roboto:wght@100&display=swap" rel="stylesheet">
 
     <script src="js/funcoes.js"></script>
-
 </head>
+
 <body>
     <section id="fundo">
         <header id="cabeca">
             <a href="index.html">
-                <img src="imagens/casa.svg" alt="homepage" id="homepage">
+                <img src="css/imagens/casa.svg" alt="homepage" id="homepage">
             </a>
             <h1 id="titulo">Cardápio</h1>
-            <img src="imagens/user.svg" alt="login" id="login">
+            <img src="css/imagens/user.svg" alt="login" id="login">
             
         </header>
         <div id="cardapio">
@@ -39,6 +40,6 @@
         </div>
         
     </section>
-    <button type="button" onclick="add_carrinho()" id="carrinho"><img src="imagens/carrinho.png" id="imgCarrinho"></button>
+    <button type="button" onclick="add_carrinho(lista_produtos)" id="carrinho"><img src="css/imagens/carrinho.png" id="imgCarrinho"></button>
 </body>
 </html>

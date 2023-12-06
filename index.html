@@ -1,41 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <title>Caneca Explosiva</title>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="slick-1.8.1/slick/slick.css">
-    <link rel="stylesheet" href="slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Noto+Sans&family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <script>
-        var lista_produtos = [
-            {"nome": "Suco", "descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quam, iste sunt veniam ipsa deserunt enim officiis porro sequi sit nobis, exercitationem, reprehenderit adipisci. Cumque unde quo suscipit eaque saepe.", "preco": 1, "imagem": "imagens/burguer.png"},
-            {"nome": "Cerveja", "descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quam, iste sunt veniam ipsa deserunt enim officiis porro sequi sit nobis, exercitationem, reprehenderit adipisci. Cumque unde quo suscipit eaque saepe.", "preco": 5, "imagem": "imagens/canecasembg.png"},
-            {"nome": "Cerveja", "descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quam, iste sunt veniam ipsa deserunt enim officiis porro sequi sit nobis, exercitationem, reprehenderit adipisci. Cumque unde quo suscipit eaque saepe.", "preco": 5, "imagem": "imagens/canecasembg.png"},
-            {"nome": "Suco", "descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quam, iste sunt veniam ipsa deserunt enim officiis porro sequi sit nobis, exercitationem, reprehenderit adipisci. Cumque unde quo suscipit eaque saepe.", "preco": 1, "imagem": "imagens/burguer.png"},
-            {"nome": "Cerveja", "descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quam, iste sunt veniam ipsa deserunt enim officiis porro sequi sit nobis, exercitationem, reprehenderit adipisci. Cumque unde quo suscipit eaque saepe.", "preco": 5, "imagem": "imagens/canecasembg.png"},
-            {"nome": "Cerveja", "descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quam, iste sunt veniam ipsa deserunt enim officiis porro sequi sit nobis, exercitationem, reprehenderit adipisci. Cumque unde quo suscipit eaque saepe.", "preco": 5, "imagem": "imagens/canecasembg.png"},
-        ];
-        
-        sessionStorage.setItem("lista_produtos", JSON.stringify(lista_produtos));
-
-        var lista = sessionStorage.getItem("lista_produtos");
-        lista = JSON.parse(lista);
-        console.log(lista[0])
-
-    </script>
-
     <div class="wrapper">
         <main>
             <section class="module parallax parallax-1">
                 <h1>Caneca Explosiva</h1>
                 <div class="caneca">
-                    <img class="imgCaneca" src="imagens/canecasembg.svg">
+                    <img class="imgCaneca" src="css/imagens/canecasembg.svg">
                 </div>
             </section>
 
@@ -61,9 +42,22 @@
         </main>
     </div>
 
-    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="slick-1.8.1/slick/slick.js"></script>
-    <script src="script.js"></script>
-    
+    <script>
+        var lista_produtos = [
+            {"nome": "Suco", "descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quam, iste sunt veniam ipsa deserunt enim officiis porro sequi sit nobis, exercitationem, reprehenderit adipisci. Cumque unde quo suscipit eaque saepe.", "preco": 1, "imagem": "css/imagens/burguer.png"},
+            {"nome": "Cerveja", "descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quam, iste sunt veniam ipsa deserunt enim officiis porro sequi sit nobis, exercitationem, reprehenderit adipisci. Cumque unde quo suscipit eaque saepe.", "preco": 5, "imagem": "css/imagens/canecasembg.png"},
+            {"nome": "breja", "descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quam, iste sunt veniam ipsa deserunt enim officiis porro sequi sit nobis, exercitationem, reprehenderit adipisci. Cumque unde quo suscipit eaque saepe.", "preco": 5, "imagem": "css/imagens/canecasembg.png"},
+            {"nome": "coca", "descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quam, iste sunt veniam ipsa deserunt enim officiis porro sequi sit nobis, exercitationem, reprehenderit adipisci. Cumque unde quo suscipit eaque saepe.", "preco": 1, "imagem": "css/imagens/burguer.png"},
+            {"nome": "mc", "descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quam, iste sunt veniam ipsa deserunt enim officiis porro sequi sit nobis, exercitationem, reprehenderit adipisci. Cumque unde quo suscipit eaque saepe.", "preco": 5, "imagem": "css/imagens/canecasembg.png"},
+            {"nome": "bk", "descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quam, iste sunt veniam ipsa deserunt enim officiis porro sequi sit nobis, exercitationem, reprehenderit adipisci. Cumque unde quo suscipit eaque saepe.", "preco": 5, "imagem": "css/imagens/canecasembg.png"},
+        ];
+        
+        sessionStorage.setItem("lista_produtos", JSON.stringify(lista_produtos));
+
+        var lista = sessionStorage.getItem("lista_produtos");
+        lista = JSON.parse(lista);
+        console.log(lista[0])
+
+    </script>
 </body>
 </html>
