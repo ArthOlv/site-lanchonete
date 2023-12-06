@@ -41,7 +41,12 @@
             </section>
         </main>
     </div>
-    
+    <a href="sobre.html">
+        <button id="info" onmouseover="showMessage()" onmouseout="hideMessage()">
+            ?
+            <div class="mensagem">Sobre</div>
+        </button>
+    </a>
     <script>
         var lista_produtos = [
             {"nome": "Suco", "descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quam, iste sunt veniam ipsa deserunt enim officiis porro sequi sit nobis, exercitationem, reprehenderit adipisci. Cumque unde quo suscipit eaque saepe.", "preco": 1, "imagem": "css/imagens/burguer.png"},
@@ -56,10 +61,17 @@
 
         var carrinho = [];
         sessionStorage.setItem("carrinho", JSON.stringify(carrinho));
-        
-        </script>
-    <a href="sobre.html">
-        <button id="info">?</button>
-    </a>
+            
+        let mensagem = document.querySelector(".mensagem") ;
+        // mostra a mensagem
+        function showMessage(){   
+            mensagem.style.display = "block";
+        }
+        // esconde a mensagem
+        function hideMessage(){
+            mensagem.style.display = "none"; 
+        } 
+
+    </script>
 </body>
 </html>
