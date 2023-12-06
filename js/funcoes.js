@@ -25,7 +25,10 @@ function add_carrinho(lista_produtos) {
 
         try {
             let x = document.getElementById(produto["nome"]);
-            console.log(`${x.value} ${produto["nome"]}`);
+            let item = {"nome": produto["nome"],"qt": x.value};
+            console.log(typeof(carrinho));
+            carrinho.push(item);
+            
         } catch {
             console.log("Erro");
         }
