@@ -74,6 +74,8 @@ input::placeholder{
     width: auto;
     padding: 0;
     margin: auto;
+    border: solid 3px #291240;
+    border-radius: 20px;
 }
 .coluna-2{
     width: 40%
