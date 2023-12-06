@@ -19,7 +19,9 @@
                 <img src="css/imagens/casa.svg" alt="homepage" id="homepage">
             </a>
             <h1 id="titulo">Carrinho</h1>
-            <img src="css/imagens/user.svg" alt="login" id="login">
+            <a href="login.html">
+                <img src="css/imagens/user.svg" alt="login" id="login">
+            </a>
             
         </header>
         <div id="cardapio">
@@ -44,7 +46,7 @@
         <button id="dinheiro">dinheiro</button>
         <button id="X" onclick="fechar()">X</button>
     </div>
-    <button type="button" onclick="pagar(carrinho),aparecer()" id="pagar"><img src="css/imagens/sacola.png" id="imgPagar"></button>
+    <button type="button" onclick="pagar(carrinho),aparecer(),total(carrinho)" id="pagar"><img src="css/imagens/sacola.png" id="imgPagar"></button>
 </body>
 </html>
 <script>
