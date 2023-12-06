@@ -20,6 +20,7 @@ function produto(nome, descricao, preco, imagem) {
 
 function add_carrinho(lista_produtos) {
     for (i in lista_produtos) {
+        let carrinho = sessionStorage.getItem("carrinho");
         let produto = lista_produtos[i];
 
         try {
