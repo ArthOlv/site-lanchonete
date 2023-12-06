@@ -19,18 +19,22 @@ function produto(nome, descricao, preco, imagem) {
 }
 
 function add_carrinho(lista_produtos) {
+    let sacola = sessionStorage.getItem("carrinho");
+    sacola = JSON.parse(sacola);
+
     for (i in lista_produtos) {
-        let carrinho = sessionStorage.getItem("carrinho");
         let produto = lista_produtos[i];
 
         try {
             let x = document.getElementById(produto["nome"]);
             let item = {"nome": produto["nome"],"qt": x.value};
-            console.log(typeof(carrinho));
-            carrinho.push(item);
+
+            if (x.value >0) {
+                sacola.push(item);
+            }
             
-        } catch {
-            console.log("Erro");
+        } catch (e) {
+            console.log(`Erro: ${e}`);
         }
     }
     alert(`Adicionado ao carrinho`);
