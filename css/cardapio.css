@@ -3,9 +3,17 @@
     padding: 0;
 }
 body{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
     background-color: black;
     margin: 0;
     padding: 0;
+    background-image: url(imagens/taverna.svg);
+    width: 100vw;
+    height: 100%;
+    background-size: cover;
+    background-repeat: repeat;
 }
 #cardapio{
     background-color: #371559; 
@@ -47,12 +55,6 @@ input::placeholder{
     text-align: center;
     color: white;
 }
-#fundo{
-    background-image: url("imagens/taverna.svg");
-    margin: 0;
-    padding: 0;
-}
-
 /* css que tava no js */
 .linha{
     height: 100%;

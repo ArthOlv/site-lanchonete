@@ -27,7 +27,7 @@ function add_carrinho(lista_produtos) {
 
         try {
             let x = document.getElementById(produto["nome"]);
-            let item = {"nome": produto["nome"],"preco": produto["preco"], "qt": parseInt(x.value), "img": produto["imagem"]};
+            let item = {"nome": produto["nome"],"preco": produto["preco"], "qt": parseInt(x.value), "imagem": produto["imagem"]};
 
             if (x.value >0) {
                 sacola.push(item);
