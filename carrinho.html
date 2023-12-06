@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Carrinho</title>
+    <link rel="stylesheet" href="css/cardapio.css">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Noto+Sans&family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+    <script src="js/funcoes.js"></script>
+</head>
+
+<body>
+    <section id="fundo">
+        <header id="cabeca">
+            <a href="index.html">
+                <img src="css/imagens/casa.svg" alt="homepage" id="homepage">
+            </a>
+            <h1 id="titulo">Cardápio</h1>
+            <img src="css/imagens/user.svg" alt="login" id="login">
+            
+        </header>
+        <div id="cardapio">
+            <script>
+
+                var carrinho = sessionStorage.getItem("carrinho")
+                carrinho = JSON.parse(carrinho);
+
+                console.log(carrinho);
+                produtos_carrinho();
+
+            </script>
+            <br><br>
+        </div>
+        
+    </section>
+    <button type="button" id="pagar"><img src="css/imagens/carrinho.png" id="pagar"></button>
+</body>
+</html>

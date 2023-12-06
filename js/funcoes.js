@@ -19,19 +19,50 @@ function produto(nome, descricao, preco, imagem) {
 }
 
 function add_carrinho(lista_produtos) {
+    let sacola = sessionStorage.getItem("carrinho");
+    sacola = JSON.parse(sacola);
+
     for (i in lista_produtos) {
-        let carrinho = sessionStorage.getItem("carrinho");
         let produto = lista_produtos[i];
 
         try {
             let x = document.getElementById(produto["nome"]);
-            let item = {"nome": produto["nome"],"qt": x.value};
-            console.log(typeof(carrinho));
-            carrinho.push(item);
+            let item = {"nome": produto["nome"],"preco": produto["preco"], "qt": parseInt(x.value), "img": produto["imagem"]};
+
+            if (x.value >0) {
+                sacola.push(item);
+            }
             
-        } catch {
-            console.log("Erro");
+        } catch (e) {
+            console.log(`Erro: ${e}`);
         }
     }
+
+    sessionStorage.setItem("carrinho", JSON.stringify(sacola));
     alert(`Adicionado ao carrinho`);
+}
+
+function produtos_carrinho() {
+    let sacola = sessionStorage.getItem("carrinho");
+    sacola = JSON.parse(sacola);
+    
+    for (i in sacola) {
+        var x = sacola[i];
+        
+        document.write(`
+            <div class="linha">
+                <div class="coluna-1"> 
+                    <img src="${x.imagem}" width="160px">
+                </div>
+                <div class="coluna-2">
+                    <h4 class="texto-produtos">${x.nome}</h4>
+                    <p id="descricao">Quantidade: ${x.qt}</p>
+                    <p class="texto-produtos">R$ ${x.preco}</p>
+                </div>
+                <div class="coluna-3">
+                    <p class="texto-produtos">Total: R$ ${(x.preco*x.qt).toFixed(2)}</p>
+                </div>
+            </div>
+        `);
+    }
 }
