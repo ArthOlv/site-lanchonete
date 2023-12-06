@@ -67,7 +67,7 @@ function total (carrinho) {
         soma += prod.preco * prod.qt;
     }
 
-    alert(`${soma.toFixed(2)}`)
+    document.write(`${soma.toFixed(2)}`)
 }
 
 function pagar(carrinho) {
