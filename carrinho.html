@@ -18,7 +18,7 @@
             <a href="index.html">
                 <img src="css/imagens/casa.svg" alt="homepage" id="homepage">
             </a>
-            <h1 id="titulo">Cardápio</h1>
+            <h1 id="titulo">Carrinho</h1>
             <img src="css/imagens/user.svg" alt="login" id="login">
             
         </header>
@@ -28,8 +28,10 @@
                 var carrinho = sessionStorage.getItem("carrinho")
                 carrinho = JSON.parse(carrinho);
 
-                console.log(carrinho);
-                produtos_carrinho();
+                for (i in carrinho) {
+                    var x = carrinho[i];
+                    produtos_carrinho(x);
+                }
 
             </script>
             <br><br>
