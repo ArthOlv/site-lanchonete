@@ -41,7 +41,7 @@
             </section>
         </main>
     </div>
-
+    
     <script>
         var lista_produtos = [
             {"nome": "Suco", "descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quam, iste sunt veniam ipsa deserunt enim officiis porro sequi sit nobis, exercitationem, reprehenderit adipisci. Cumque unde quo suscipit eaque saepe.", "preco": 1, "imagem": "css/imagens/burguer.png"},
@@ -53,10 +53,13 @@
         ];
         
         sessionStorage.setItem("lista_produtos", JSON.stringify(lista_produtos));
-
+        
         var carrinho = [{"nome":"", "qt":0}];
         sessionStorage.setItem("carrinho", JSON.stringify(carrinho));
-
-    </script>
+        
+        </script>
+    <a href="sobre.html">
+        <button id="info">?</button>
+    </a>
 </body>
 </html>

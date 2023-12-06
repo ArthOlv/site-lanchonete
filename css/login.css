@@ -29,7 +29,7 @@ body *{
     color: #ac5acf;
 }
 .left-login-img{
-    width: 35vw;
+    width: 30vw;
 }
 .right-login{
     width: 50vw;
@@ -155,9 +155,21 @@ button[disabled]{
      height: auto;
     }
     .left-login-img{
-        width: 50vh;
+        width: 40vw;
     }
     .card-login{
         width: 90%;
     }
+}
+#home{
+    background-color: #7E5E8C;
+    position: fixed;
+    left: center;
+    right: 50vw;
+    top: 10px;
+    border: solid 5px #2b134b;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    padding: 0 3px 5px 0;
 }
