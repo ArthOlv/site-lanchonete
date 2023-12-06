@@ -84,11 +84,12 @@ function administrativo(lista_produtos) {
             <h4 class="texto-produtos">${x.nome}</h4>
             <h4 class="texto-produtos">R$ ${x.preco}</h4>
             <p class="texto-produtos">Novo preço:</p>
-            <input>
+            <input type="number" id="${x.nome}_preco">
         </div>
         <div class="coluna-3">
-            <h4 class="texto-produtos">${x.nome}</h4>
-            <input Disponibilidade>
+            <h4 class="texto-produtos">Disponibilidade</h4>
+            <p class="texto-produtos">No estoque</p>
+            <input type="checkbox" id="${x.nome}_ativo">
         </div>
     </div>
 `);
