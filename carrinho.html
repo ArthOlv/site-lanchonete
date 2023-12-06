@@ -42,13 +42,18 @@
     <div id="pagamentos">
         <button id="X" onclick="fechar()">X</button>
         <div id="botoes">
-            <button id="pix">pix</button>
-            <button id="cartao">cartao</button>
-            <button id="dinheiro">dinheiro</button>
+            <button id="pix" onclick="total(carrinho, 'pix')">Pix</button>
+            <button id="cartao" onclick="total(carrinho, 'cartao')">cartao</button>
+            <button id="dinheiro" onclick="total(carrinho, 'dinheiro')">dinheiro</button>
         </div>
-        <p id="desconto">Total:</p>
+        <script>
+            var total = sessionStorage.getItem("total");
+            total = JSON.parse(total);
+            document.write(`<p id='desconto'>Total: ${total}</p>`)
+        </script>
+        
     </div>  
-    <button type="button" onclick="pagar(carrinho),aparecer()" id="pagar"><img src="css/imagens/sacola.png" id="imgPagar"></button>
+    <button type="button" onclick="aparecer()" id="pagar"><img src="css/imagens/sacola.png" id="imgPagar"></button>
 </body>
 </html>
 <script>

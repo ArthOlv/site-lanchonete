@@ -60,21 +60,25 @@ function produtos_carrinho(produto) {
     `);
 }
 
-function total (carrinho) {
+function total (carrinho, tipo) {
     var soma = 0;
     for (i in carrinho) {
         let prod = carrinho[i];
         soma += prod.preco * prod.qt;
     }
 
-    document.write(`${soma.toFixed(2)}`)
+    if (tipo == "pix") {
+        let total = soma*0.9;
+    } else if (tipo == "dinheiro") {
+        let total = soma*0.95;
+    } else {
+        let total = soma*1.1;
+    }
+
+    sessionStorage.setItem("total", soma.toFixed(2));
 }
 
-function pagar(carrinho) {
-    alert("Pedido pago com sucesso")
-}
-
-function administrativo(lista_produtos) {
+function administrativo(x) {
     document.write(`
     <div class="linha">
         <div class="coluna-1"> 
@@ -93,4 +97,14 @@ function administrativo(lista_produtos) {
         </div>
     </div>
 `);
+}
+
+function atualizar(lista_produtos) {
+    for (i in lista_produtos) {
+        let prod = lista_produtos[i]
+        var caixa = document.getElementById(`${prod.nome}_ativo`);
+        console.log(caixa);
+        console.log(caixa.value);
+
+    }
 }
