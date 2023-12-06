@@ -132,13 +132,14 @@ input::placeholder{
     position: relative;
     width: 300px;
     height: 200px;
-    border: solid 2px white;
-    background-color: wheat;
+    border: 2px solid rgb(149, 68, 224);
+    background-color: #7E5E8C;
     margin: auto;
     padding: 0;
     justify-content: center;
     align-items: center;
-    top: -3em;
+    top: -20em;
+    border-radius: 20px;
 }
 #botoes{
     margin-top: 15%;
@@ -146,16 +147,26 @@ input::placeholder{
     justify-content: center;
 }
 #X{
+    width: 20px;
+    height: 20px;
+    top: 5px;
+    left: 5px;
     position: relative;
     background-color: red;
     color: white;
+    border-radius: 50%;
+    border: 0;
 }
 #pix{
     position: relative;
+    max-width: 60px;
+    max-height: 60px;
     width: 60px;
     height: 60px;
     margin: auto;
     border-radius: 50%;
+    background-color: blueviolet;
+    border: 2px solid rgb(149, 68, 224);
 }
 #cartao{
     position: relative;
@@ -163,6 +174,8 @@ input::placeholder{
     height: 60px;
     margin: auto;
     border-radius: 50%;
+    background-color: blueviolet;
+    border: 2px solid rgb(149, 68, 224);
 }
 #dinheiro{
     position: relative;
@@ -170,9 +183,12 @@ input::placeholder{
     height: 60px;
     margin: auto;
     border-radius: 50%;
+    background-color: blueviolet;
+    border: 2px solid rgb(149, 68, 224);
 }
 #desconto{
     display: flex;
     justify-content: center;
     margin-top: 10px;
+    color: white;
 }

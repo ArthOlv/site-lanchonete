@@ -26,19 +26,18 @@
         </header>
         <div id="cardapio">
             <script>
-
+                
                 var carrinho = sessionStorage.getItem("carrinho")
                 carrinho = JSON.parse(carrinho);
-
+                
                 for (i in carrinho) {
                     var x = carrinho[i];
                     produtos_carrinho(x);
                 }
-
-            </script>
+                
+                </script>
             <br><br>
         </div>
-        
     </section>
     <div id="pagamentos">
         <button id="X" onclick="fechar()">X</button>
@@ -48,7 +47,7 @@
             <button id="dinheiro">dinheiro</button>
         </div>
         <p id="desconto">Total:</p>
-    </div>
+    </div>  
     <button type="button" onclick="pagar(carrinho),aparecer()" id="pagar"><img src="css/imagens/sacola.png" id="imgPagar"></button>
 </body>
 </html>
