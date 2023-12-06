@@ -26,7 +26,7 @@ body *{
 }
 .left-login > h1 {
     font-size: 3vw;
-    color: #77ffc0;
+    color: #ac5acf;
 }
 .left-login-img{
     width: 35vw;
@@ -50,7 +50,7 @@ body *{
     box-shadow: 0px 10px 40px #00000056;
 }
 .card-login > h1{
-    color: #00ff88;
+    color: #ac5acf;
     font-weight: 800;
     margin: 0;
 }
@@ -92,9 +92,9 @@ body *{
     font-weight: 800;
     letter-spacing: 3px;
     color: #2b134b;
-    background-color: #00ff88;
+    background-color: #7E5E8C;
     cursor: pointer;
-    box-shadow: 0px 10px 40px -12px #00ff8052;
+    box-shadow: 0px 10px 40px -12px #291240;
     transition: all 0.3s;
 }
 .btn-login:hover{
@@ -108,9 +108,9 @@ body *{
     font-weight: 800;
     letter-spacing: 3px;
     color: #2b134b;
-    background-color: #51ffae;
+    background-color: #ac5acf;
     cursor: pointer;
-    box-shadow: 0px 10px 40px -12px #00ff8052;
+    box-shadow: 0px 10px 40px -12px #291240;
     scale: 1.1;
 }
 .btn-login:active{
@@ -124,9 +124,9 @@ body *{
     font-weight: 800;
     letter-spacing: 3px;
     color: #2b134b;
-    background-color: #00ff88;
+    background-color: #7E5E8C;
     cursor: pointer;
-    box-shadow: 0px 10px 40px -12px #00ff8052;
+    box-shadow: 0px 10px 40px -12px #291240;
     scale: 1.0;
 }
 
