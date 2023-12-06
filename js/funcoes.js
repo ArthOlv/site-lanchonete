@@ -42,27 +42,21 @@ function add_carrinho(lista_produtos) {
     alert(`Adicionado ao carrinho`);
 }
 
-function produtos_carrinho() {
-    let sacola = sessionStorage.getItem("carrinho");
-    sacola = JSON.parse(sacola);
-    
-    for (i in sacola) {
-        var x = sacola[i];
+function produtos_carrinho(produto) {
         
-        document.write(`
-            <div class="linha">
-                <div class="coluna-1"> 
-                    <img src="${x.imagem}" width="160px">
-                </div>
-                <div class="coluna-2">
-                    <h4 class="texto-produtos">${x.nome}</h4>
-                    <p id="descricao">Quantidade: ${x.qt}</p>
-                    <p class="texto-produtos">R$ ${x.preco}</p>
-                </div>
-                <div class="coluna-3">
-                    <p class="texto-produtos">Total: R$ ${(x.preco*x.qt).toFixed(2)}</p>
-                </div>
+    document.write(`
+        <div class="linha">
+            <div class="coluna-1"> 
+                <img src="${produto.imagem}" width="160px">
             </div>
-        `);
-    }
+            <div class="coluna-2">
+                <h4 class="texto-produtos">${produto.nome}</h4>
+                <p id="descricao">Quantidade: ${produto.qt}</p>
+                <p class="texto-produtos">R$ ${produto.preco}</p>
+            </div>
+            <div class="coluna-3">
+                <p class="texto-produtos">Total: R$ ${(produto.preco*produto.qt).toFixed(2)}</p>
+            </div>
+        </div>
+    `);
 }
