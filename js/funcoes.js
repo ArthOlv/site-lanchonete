@@ -73,3 +73,23 @@ function total (carrinho) {
 function pagar(carrinho) {
     alert("Pedido pago com sucesso")
 }
+
+function administrativo(lista_produtos) {
+    document.write(`
+    <div class="linha">
+        <div class="coluna-1"> 
+            <img src="${produto.imagem}" width="160px">
+        </div>
+        <div class="coluna-2">
+            <h4 class="texto-produtos">${produto.nome}</h4>
+            <h4 class="texto-produtos">R$ ${produto.preco}</h4>
+            <p class="texto-produtos">Novo preço:</p>
+            <input>
+        </div>
+        <div class="coluna-3">
+            <h4 class="texto-produtos">${produto.nome}</h4>
+            <input Disponibilidade>
+        </div>
+    </div>
+`);
+}

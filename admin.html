@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Administrativo</title>
+    <link rel="stylesheet" href="css/cardapio.css">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Noto+Sans&family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+    <script src="js/funcoes.js"></script>
+</head>
+
+<body>
+    <section id="fundo">
+        <header id="cabeca">
+            <a href="index.html">
+                <img src="css/imagens/casa.svg" alt="homepage" id="homepage">
+            </a>
+            <h1 id="titulo">Administrativo</h1>
+            <a href="login.html">
+                <img src="css/imagens/user.svg" alt="login" id="login">
+            </a>
+        </header>
+        <div id="cardapio">
+            <script>
+
+                var lista_produtos = sessionStorage.getItem("lista_produtos")
+                lista_produtos = JSON.parse(lista_produtos);
+                                
+                for (i in lista_produtos) {
+                    var x = lista_produtos[i];
+                    produto(x);
+                }
+
+            </script>
+            <br><br>
+        </div>
+        
+    </section>
+    <!-- <a href="carrinho.html">
+        <button type="button" onclick="add_carrinho(lista_produtos)" id="carrinho"><img src="css/imagens/carrinho.png" id="imgCarrinho"></button>
+    </a> -->
+    </body>
+</html>
