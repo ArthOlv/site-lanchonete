@@ -54,9 +54,8 @@
         
         sessionStorage.setItem("lista_produtos", JSON.stringify(lista_produtos));
 
-        var lista = sessionStorage.getItem("lista_produtos");
-        lista = JSON.parse(lista);
-        console.log(lista[0])
+        var carrinho = [{"nome":"", "qt":0}];
+        sessionStorage.setItem("carrinho", JSON.stringify(carrinho));
 
     </script>
 </body>
