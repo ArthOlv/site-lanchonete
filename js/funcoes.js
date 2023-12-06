@@ -60,6 +60,16 @@ function produtos_carrinho(produto) {
     `);
 }
 
+function total (carrinho) {
+    var soma = 0;
+    for (i in carrinho) {
+        let prod = carrinho[i];
+        soma += prod.preco * prod.qt;
+    }
+
+    alert(`${soma.toFixed(2)}`)
+}
+
 function pagar(carrinho) {
     alert("Pedido pago com sucesso")
 }
