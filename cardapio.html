@@ -28,12 +28,12 @@
 
                 var lista_produtos = sessionStorage.getItem("lista_produtos")
                 lista_produtos = JSON.parse(lista_produtos);
-                
-                console.log(lista_produtos[0]);
-                
+                                
                 for (i in lista_produtos) {
                     var x = lista_produtos[i];
-                    produto(x.nome, x.descricao, x.preco, x.imagem);
+                    if (x.ativo) {
+                        produto(x);
+                    }
                 }
 
             </script>

@@ -1,17 +1,17 @@
 
-function produto(nome, descricao, preco, imagem) {
+function produto(x) {
     document.write(`
     <div class="linha">
         <div class="coluna-1"> 
-            <img src="${imagem}" width="160px">
+            <img src="${x.imagem}" width="160px">
         </div>
         <div class="coluna-2">
-            <h4 class="texto-produtos">${nome}</h4>
-            <p id="descricao">${descricao}</p>
-            <p class="texto-produtos">R$ ${preco}</p>
+            <h4 class="texto-produtos">${x.nome}</h4>
+            <p id="descricao">${x.descricao}</p>
+            <p class="texto-produtos">R$ ${x.preco}</p>
         </div>
         <div class="coluna-3">
-            <input type="number" id="${nome}" max="9" min="0" placeholder="0">
+            <input type="number" id="${x.nome}" max="9" min="0" placeholder="0">
             <p id='unidade'>unidade(s)</p>
         </div>
     </div>
@@ -43,7 +43,6 @@ function add_carrinho(lista_produtos) {
 }
 
 function produtos_carrinho(produto) {
-        
     document.write(`
         <div class="linha">
             <div class="coluna-1"> 
@@ -59,4 +58,8 @@ function produtos_carrinho(produto) {
             </div>
         </div>
     `);
+}
+
+function pagar(carrinho) {
+    alert("Pedido pago com sucesso")
 }

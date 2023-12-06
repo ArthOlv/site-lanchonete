@@ -108,3 +108,19 @@ input::placeholder{
     width: 65px;
     height: 65px;
 }
+#pagar{
+    position: fixed;
+    bottom: 20px;
+    left: 47vw;
+    width: 90px;
+    height: 90px;
+    border: 3px solid #56405f;
+    border-radius: 50%;
+    background-color: #7E5E8C;
+}
+#imgPagar{
+    padding: 0;
+    margin: 3px 0 0 5px;
+    width: 65px;
+    height: 65px;
+}
