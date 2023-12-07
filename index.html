@@ -1,26 +1,82 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <title>Tantofaz</title>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="slick-1.8.1/slick/slick.css">
-    <link rel="stylesheet" href="slick-1.8.1/slick/slick-theme.css">
+    <title>Caneca Explosiva</title>
+    <link rel="icon" href="css/imagens/canecasembg.svg">
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Noto+Sans&family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
-    <header id="header">Tantofaz</header>
-    <hr>
+
 <body>
-    <div class="galeria">
-        <img src="/imagens/foto1.png" alt="">
-        <img src="/imagens/foto2.png" alt="">
-        <img src="/imagens/foto3.png" alt="">
-        <img src="/imagens/foto4.png" alt="">
-        <img src="/imagens/foto5.png" alt="">
+    <div class="wrapper">
+        <main>
+            <section class="module parallax parallax-1">
+                <h1>Caneca Explosiva</h1>
+                <div class="caneca">
+                    <img class="imgCaneca" src="css/imagens/canecasembg.svg">
+                </div>
+            </section>
+
+            <section class="module content">
+                <div class="container">
+                    <div>
+                        <a href="cardapio.html">
+                        <button class="botao1" id="botao1"><h1 class="lanches">Lanches</h1></button>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="cardapio.html">
+                        <button class="botao2" id="botao2"><h1 class="lanches">Combos</h1></button>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="cardapio.html">
+                        <button class="botao3" id="botao3"><h1 class="lanches">Bebidas</h1></button>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
     </div>
-    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="slick-1.8.1/slick/slick.js"></script>
-    <script src="script.js"></script>
-    
+    <a href="sobre.html">
+        <button id="info" onmouseover="showMessage()" onmouseout="hideMessage()">
+            ?
+            <div class="mensagem">Sobre</div>
+        </button>
+    </a>
+    <script>
+
+        if (!sessionStorage.getItem("lista_produtos")) {
+            var lista_produtos = [
+                {"nome": "das Valquírias", "descricao": "Em uma lendária receita apreciada pelas Valquírias, guerreiras imortais dos mitos nórdicos, nasce um hambúrguer de sabor celestial. A carne bovina, cuidadosamente selecionada e temperada com segredos ancestrais, revela-se suculenta e aromática, como se transportasse a força dos campos de batalha para cada mordida.", "preco": 25, "imagem": "css/imagens/lanche1.jpg", "ativo": true},
+                {"nome": "Forjado em Chamas", "descricao": "Este hambúrguer não foi simplesmente preparado, mas sim forjado em altas temperaturas, como se tivesse emergido das próprias chamas da fornalha. O hambúrguer de mamute, uma carne ancestral e rara, é a base dessa criação lendária, uma verdadeira obra-prima gastronômica.", "preco": 30, "imagem": "css/imagens/lanche2.png", "ativo": true},
+                {"nome": "Sabedoria de Atenas", "descricao": "Este hambúrguer vegetariano não é apenas uma opção, é uma celebração da sabedoria dos antigos atenienses, conhecidos por sua busca pela verdade e pela virtude. É uma ode à escolha consciente e ao sabor sofisticado, honrando a paz e a ponderação em cada mordida.", "preco": 25, "imagem": "css/imagens/lanche3.jpg", "ativo": true},
+                {"nome": "Uma Experiência Filosófica", "descricao": "Cada mordida deste hambúrguer é uma jornada de ponderação e discernimento. A riqueza de sabores, proveniente da base de grãos e especiarias, aliada à suavidade do queijo feta e à frescura dos vegetais, proporciona uma experiência gastronômica que não apenas satisfaz, mas também inspira uma reflexão sobre escolhas conscientes.", "preco": 35, "imagem": "css/imagens/lanche4.jpg", "ativo": true},
+                {"nome": "Caneca Explosiva", "descricao": "Esta cerveja traz consigo uma história ousada e misteriosa, envolvendo barris roubados de Varrala, uma terra lendária conhecida por seus segredos guardados a sete chaves. A Caneca Explosiva é mais do que uma simples bebida, é uma aventura em cada gole, uma explosão de sabores que remete à coragem dos que se atrevem a saboreá-la.", "preco": 16, "imagem": "css/imagens/bebida1.jpg", "ativo": true},
+                {"nome": "Intensidade Artesanal", "descricao": "Esta cerveja, forjada em barris misteriosos, é o resultado de uma técnica artesanal que aprimora cada aspecto do seu sabor. O aroma, rico e encorpado, carrega consigo a energia de uma descoberta ousada, enquanto a suavidade do primeiro gole é seguida por uma explosão de nuances que despertam os sentidos.", "preco": 15, "imagem": "css/imagens/bebida3.png", "ativo": true},
+            ];
+            
+            sessionStorage.setItem("lista_produtos", JSON.stringify(lista_produtos));
+
+        }
+
+        var carrinho = [];
+        sessionStorage.setItem("carrinho", JSON.stringify(carrinho));
+            
+        let mensagem = document.querySelector(".mensagem") ;
+        // mostra a mensagem
+        function showMessage(){   
+            mensagem.style.display = "block";
+        }
+        // esconde a mensagem
+        function hideMessage(){
+            mensagem.style.display = "none"; 
+        } 
+
+    </script>
 </body>
 </html>

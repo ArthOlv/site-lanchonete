@@ -1,0 +1,176 @@
+body{
+    margin: 0;
+    padding: 0;
+    color: #242424;
+    background-color: black;
+    font-family: sans-serif;
+    /* os 2 adiciona o quebramento de linha nos textos caso seja redimencionado o site */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+.wrapper{
+    width: 100%;
+    /* 0 encima e embaixo e auto na esquerda e na direita */
+    margin: 0 auto;
+}
+main{
+    display: block;
+    background-color: #fff;
+    font-weight: 100vh;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    max-width: 760px;
+    margin: 0 4vw;
+    padding: 0 10px;
+    display: flex;
+}
+button{
+    padding: 0;
+    margin: 0;
+    width: 30vw;
+    height: 95vh;
+    font-family: 'MedievalSharp', cursive;
+}
+section.module h1{
+    font-family: 'MedievalSharp', cursive;
+}
+section.module.content{
+    padding: 0;
+    background-color: #000000;
+}
+section.module.parallax{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+section.module.parallax::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 8;
+    background: -moz-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100% );
+    background: -webkit-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100% );
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100% );
+}
+
+section.module.parallax-1{
+    background-image: url("imagens/taverna.svg");
+}
+section.module.parallax h1{
+    color: #FFF;
+    text-align: center;
+    font-size: 78px;
+    z-index: 50;
+    text-transform: uppercase;
+}
+@media all and (max-width: 820px) {
+    .container{
+      margin:0;
+      padding:0;
+    }
+    section.module.parallax h1 {
+      font-size: 36px;
+    }
+}
+.caneca{
+    width: 100%;
+}
+.imgCaneca{
+    width: 30%;
+    display: flex; /* Necessário para o margin funcionar */
+    margin-left: auto;
+    margin-right: auto;
+}
+.botao1{
+    cursor: pointer;
+    font-size: 30px;
+    border: 30px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    background-image: url("imagens/burguer1.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+    font-family: 'MedievalSharp', cursive;
+}
+.botao1:hover{
+    transition: all 0.3s ease;
+    font-size: 45px;
+    color: #7849A5;
+}
+.botao2{
+    cursor: pointer;
+    font-size: 30px;
+    border: 30px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    background-image: url("imagens/combo2.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+    font-family: 'MedievalSharp', cursive;
+}
+.botao2:hover{
+    transition: all 0.3s ease;
+    font-size: 45px;
+    color: #7849A5;
+}
+.botao3{
+    cursor: pointer;
+    font-size: 30px;
+    border: 30px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    background-image: url("imagens/bebida2.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+    font-family: 'MedievalSharp', cursive;
+}
+.botao3:hover{
+    transition: all 0.3s ease;
+    font-size: 45px;
+    color: #7849A5;
+}
+#info{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 10px;
+    right: 15px;
+    border: solid 2px #2b134b;
+    border-radius: 50%;
+    background-color: #242424;
+    color: white;
+    font-size: 25px;
+}
+.mensagem{
+    display:none;
+    position:absolute;
+    bottom: 25px;
+    left: -30px;
+    margin: auto;
+    width:100px;
+    height:50px;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Administrativo</title>
+    <link rel="icon" href="css/imagens/canecasembg.svg">
+    <link rel="stylesheet" href="css/login.css">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Noto+Sans&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <script src="js/func_login.js"></script>
+</head>
+
+<body>
+    <div class="main-login">
+        <a href="index.html">
+            <button id="home"><img src="css/imagens/casa.svg" alt="casinha"></button>
+        </a>
+        <div class="left-login">
+            <h1>Faça login<br>Para entrar no sistema</h1>
+            <img src="css/imagens/canecasembg.svg" class="left-login-img" alt="Caneca Explosiva"> 
+        </div>
+        <div class="right-login">
+            <div class="card-login">
+                <h1>Login</h1>
+                <div class="textfield">
+                    <label for="usuario">Usuário</label>
+                    <input type="text" id="usuario" name="usuario" onchange="validateFields()" placeholder="Usuário">
+                </div>
+                <div class="textfield">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha" onchange="validateFields()" placeholder="Senha">
+                </div>
+                <a href="admin.html">
+                <button onclick="LogInCheck()" id="btn-login" class="btn-login" disabled="true">Login</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+Arthur de Oliveira
+Edson Fernandes
+Giovanni Abrami
+Mateus de Oliveira Menck
+
+Obs:
+- O site conta com uma pagina inicial com o nome da lanchonete com botões que levam à pagina do cardápio e também no canto inferior direito um botão de interrogação que leva à pagina "sobre" com a descrição detalhada dos integrantes do grupo.
+
+- Na página do cardápio o usuário pode escolher a quantidade de cada produto que será adicionado ao carrinho, também no cabeçalho do site pode encontrar o nome da página que se encontra e também os botões tanto de login quanto de voltar para a página inicial.
+Já na parte inferior da página encontra-se o botão de "carrinho" que faz com que os itens sejam adicionados ao carrinho.
+É importante ressaltar que  os itens mostrados no cardápio são apenas os que estão ativos, que podem ser controlados pela página de administrador(que será acessada através do login).
+
+- Na página do carrinho aparece os itens adicionados e o total multiplicado da quantidade e do preço do produto, e assim que clicado no botão da sacola da parte inferior da página o usuário pode escolher entre as formas de pagamento e o valor final é mostrado(com diferenças no valor dependendo da forma de pagamento escolhida).
+
+- A página de login é necessário o login com o Usuário Gabriel e a senha meianoiteteconto, assim tendo acesso à página de administrador, que pode controlar qual lanche fica ou sai do cardápio através de caixa de seleção.

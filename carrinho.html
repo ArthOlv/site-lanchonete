@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Carrinho</title>
+    <link rel="icon" href="css/imagens/canecasembg.svg">
+    <link rel="stylesheet" href="css/cardapio.css">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Noto+Sans&family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+    <script src="js/funcoes.js"></script>
+</head>
+
+<body>
+    <section id="fundo">
+        <header id="cabeca">
+            <a href="index.html">
+                <img src="css/imagens/casa.svg" alt="homepage" id="homepage">
+            </a>
+            <h1 id="titulo">Carrinho</h1>
+            <a href="login.html">
+                <img src="css/imagens/user.svg" alt="login" id="login">
+            </a>
+            
+        </header>
+        <div id="cardapio">
+            <script>
+                
+                var carrinho = sessionStorage.getItem("carrinho")
+                carrinho = JSON.parse(carrinho);
+                
+                for (i in carrinho) {
+                    var x = carrinho[i];
+                    produtos_carrinho(x);
+                }
+                
+                </script>
+            <br><br>
+        </div>
+    </section>
+    <div id="pagamentos">
+        <button id="X" onclick="fechar()">X</button>
+        <div id="botoes">
+            <button id="pix" onclick="total(carrinho, 'pix')">Pix</button>
+            <button id="cartao" onclick="total(carrinho, 'cartao')">cartao</button>
+            <button id="dinheiro" onclick="total(carrinho, 'dinheiro')">dinheiro</button>
+        </div>
+        <script>
+            var valor_total = sessionStorage.getItem("total");
+            valor_total = JSON.parse(valor_total);
+            console.log(valor_total)
+            document.write(`<p id='desconto'>Total: 0 </p>`)
+        </script>
+        
+    </div>  
+    <button type="button" onclick="aparecer()" id="pagar"><img src="css/imagens/sacola.png" id="imgPagar"></button>
+</body>
+</html>
+<script>
+    let botao = document.querySelector("#pagamentos")
+    function aparecer (){
+        botao.style.display = "block";
+    }
+    function fechar(){
+        botao.style.display = "none"
+    }
+</script>
+<!-- total(carrinho) -->
