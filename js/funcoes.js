@@ -105,6 +105,8 @@ function total (carrinho, tipo) {
 
     sessionStorage.setItem("total", desconto.toFixed(2));
     console.log(JSON.parse(sessionStorage.getItem("total")));
+    var disp = document.getElementById("desconto");
+    disp.innerHTML = `Total: R$ `+desconto.toFixed(2)
 }
 
 function atualizar(lista_produtos) {
