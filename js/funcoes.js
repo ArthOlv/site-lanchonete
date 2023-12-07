@@ -110,8 +110,8 @@ function atualizar(lista_produtos) {
     for (i in lista_produtos) {
         let prod = lista_produtos[i]
         var caixa = document.getElementById(`${prod.nome}_ativo`);
-        console.log(caixa);
-        console.log(caixa.value);
-
+        
+        lista_produtos[i]["ativo"] = caixa.checked;
     }
+    sessionStorage.setItem("lista_produtos", JSON.stringify(lista_produtos));
 }
