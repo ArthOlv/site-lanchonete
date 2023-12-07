@@ -10,15 +10,19 @@ function isPasswordValid(){
     const senha = document.getElementById("senha").value;
     if (!senha){
         return false;
-    }
-    return true;
+    }else if(senha=="meianoiteteconto"){
+        return true;
+    }else
+    return false;
 }
 function isUserValid(){
     const user = document.getElementById("usuario").value;
     if(!user){
         return false;
+    }else if(user=="Gabriel"){
+        return true;
     }
-    return true;
+    return false;
 }
 
 const botao = document.getElementById("btn-login")
