@@ -47,9 +47,9 @@
             <button id="dinheiro" onclick="total(carrinho, 'dinheiro')">dinheiro</button>
         </div>
         <script>
-            var total = sessionStorage.getItem("total");
-            total = JSON.parse(total);
-            document.write(`<p id='desconto'>Total: ${total}</p>`)
+            var valor_total = sessionStorage.getItem("total");
+            valor_total = JSON.parse(valor_total);
+            document.write(`<p id='desconto'>Total: ${valor_total}</p>`)
         </script>
         
     </div>  

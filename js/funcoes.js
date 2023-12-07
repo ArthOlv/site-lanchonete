@@ -96,14 +96,15 @@ function total (carrinho, tipo) {
     }
 
     if (tipo == "pix") {
-        let total = soma*0.9;
+        var desconto = soma*0.9;
     } else if (tipo == "dinheiro") {
-        let total = soma*0.95;
+        var desconto = soma*0.95;
     } else {
-        let total = soma*1.1;
+        var desconto = soma*1.1;
     }
 
-    sessionStorage.setItem("total", soma.toFixed(2));
+    sessionStorage.setItem("total", desconto.toFixed(2));
+    console.log(JSON.parse(sessionStorage.getItem("total")));
 }
 
 function atualizar(lista_produtos) {
