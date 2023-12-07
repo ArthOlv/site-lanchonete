@@ -1,4 +1,3 @@
-
 function produto(x) {
     document.write(`
     <div class="linha">
@@ -16,6 +15,53 @@ function produto(x) {
         </div>
     </div>
         `);
+}
+
+function produtos_carrinho(produto) {
+    document.write(`
+        <div class="linha">
+            <div class="coluna-1"> 
+                <img src="${produto.imagem}" width="160px">
+            </div>
+            <div class="coluna-2">
+                <h4 class="texto-produtos">${produto.nome}</h4>
+                <p id="descricao">Quantidade: ${produto.qt}</p>
+                <p class="texto-produtos">R$ ${produto.preco}</p>
+            </div>
+            <div class="coluna-3">
+                <p class="texto-produtos">Total: R$ ${(produto.preco*produto.qt).toFixed(2)}</p>
+            </div>
+        </div>
+    `);
+}
+
+function administrativo(x) {
+    document.write(`
+    <div class="linha">
+        <div class="coluna-1"> 
+            <img src="${x.imagem}" width="160px">
+        </div>
+        <div class="coluna-2">
+            <h4 class="texto-produtos">${x.nome}</h4>
+            <h4 class="texto-produtos">R$ ${x.preco}</h4>
+        </div>
+        <div class="coluna-3">
+            <h4 class="texto-produtos">Disponibilidade</h4>
+            <p class="texto-produtos">No estoque</p>`)
+            
+    if (x.ativo) {        
+        document.write(`
+            <input type="checkbox" id="${x.nome}_ativo" checked>
+            </div>
+        </div>
+        `);
+    } else {
+        document.write(`
+            <input type="checkbox" id="${x.nome}_ativo">
+            </div>
+        </div>
+        `);
+    }
 }
 
 function add_carrinho(lista_produtos) {
@@ -42,24 +88,6 @@ function add_carrinho(lista_produtos) {
     alert(`Adicionado ao carrinho`);
 }
 
-function produtos_carrinho(produto) {
-    document.write(`
-        <div class="linha">
-            <div class="coluna-1"> 
-                <img src="${produto.imagem}" width="160px">
-            </div>
-            <div class="coluna-2">
-                <h4 class="texto-produtos">${produto.nome}</h4>
-                <p id="descricao">Quantidade: ${produto.qt}</p>
-                <p class="texto-produtos">R$ ${produto.preco}</p>
-            </div>
-            <div class="coluna-3">
-                <p class="texto-produtos">Total: R$ ${(produto.preco*produto.qt).toFixed(2)}</p>
-            </div>
-        </div>
-    `);
-}
-
 function total (carrinho, tipo) {
     var soma = 0;
     for (i in carrinho) {
@@ -76,27 +104,6 @@ function total (carrinho, tipo) {
     }
 
     sessionStorage.setItem("total", soma.toFixed(2));
-}
-
-function administrativo(x) {
-    document.write(`
-    <div class="linha">
-        <div class="coluna-1"> 
-            <img src="${x.imagem}" width="160px">
-        </div>
-        <div class="coluna-2">
-            <h4 class="texto-produtos">${x.nome}</h4>
-            <h4 class="texto-produtos">R$ ${x.preco}</h4>
-            <p class="texto-produtos">Novo preço:</p>
-            <input type="number" id="${x.nome}_preco">
-        </div>
-        <div class="coluna-3">
-            <h4 class="texto-produtos">Disponibilidade</h4>
-            <p class="texto-produtos">No estoque</p>
-            <input type="checkbox" id="${x.nome}_ativo">
-        </div>
-    </div>
-`);
 }
 
 function atualizar(lista_produtos) {
